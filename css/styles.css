@@ -3,9 +3,14 @@
 main {
     max-width: 1600px;
     margin: auto;
-    background: #f2f2f2;
     padding-bottom: 50px;
 }
+
+body {
+    background: #f2f2f2;
+    margin: 0px;
+}
+
 
 h1 {
     font-size: 35px;
