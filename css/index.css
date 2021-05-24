@@ -1,0 +1,42 @@
+.all_systems img, 
+.all_best_sellers img {
+    max-width: 120px;
+}
+
+.all_systems,
+.all_best_sellers {
+    margin-left: 15px;
+}
+
+
+.systems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+
+.best_sellers {
+    display: flex;
+    flex-direction: column;
+}
+
+.game {
+    display: flex;
+    padding: 20px;
+}
+
+.game h2 {
+    text-align: left;
+    margin-top: -5px;
+}
+
+.game > * {
+    flex: 1;
+}
+
+.price {
+   font-size: 20px;
+   font-weight: 600;
+}

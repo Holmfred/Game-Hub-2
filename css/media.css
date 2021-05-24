@@ -1,0 +1,117 @@
+@media (min-width:500px) {
+    .all_systems img,
+    .all_best_sellers img {
+        max-width: 150px;
+    }
+
+    .game_button {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:650px) {
+    .all_systems img,
+    .all_best_sellers img {
+        max-width: 180px;
+    }
+
+    .searchbar {
+        width: 550px;
+    }
+
+    .game_button {
+        margin-top: 70px;
+    }
+}
+
+
+
+@media (min-width:800px) {
+    .welcome {
+        display: block;
+    }
+    
+    .phrase{
+        display: block;
+    }
+
+    .all_systems img,
+    .all_best_sellers img {
+        max-width: 200px;
+    }
+
+    .searchbar {
+        width: 700px;
+    }
+
+    .game_button {
+        margin-top: 80px;
+    }
+
+    .cta-menu {
+        min-width: 300px
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1000px) {
+    .best_sellers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phrase {
+        max-width: 600px;
+    }
+
+    .searchbar {
+        width: 900px;
+        padding: 10px;
+    }
+
+    .searchbar_line {
+        padding: 20px;
+    }
+
+    .systems {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .game_button {
+        margin-top: 90px;
+    }
+
+    
+
+}
+
+@media (min-width:1300px){
+    .all_systems img,
+    .all_best_sellers img {
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}

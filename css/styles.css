@@ -1,0 +1,101 @@
+@import "imports/links.css";
+
+main {
+    max-width: 1800px;
+    margin: auto;
+    background: #f2f2f2;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.top_header {
+    background: #BAC5CF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo { 
+    max-width: 200px;
+}
+
+.phrase {
+    display: none;
+    max-width: 400px;
+    margin-left: -100px;
+}
+
+.fa-bars {
+    font-size: 50px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+nav {
+    margin-left: 25px;
+    padding-right: 25px;
+    display: none;
+    position: fixed;
+    top: 90px;
+    z-index: 1000;
+    right: 8px;
+    background-color: #BAC5CF;
+    margin-top: 48px;
+    border-bottom: solid 1px #000;
+    border-left: solid 1px #000;
+}
+
+nav li {
+    display: block;
+    padding: 15px;
+    border-radius: solid 1px #000;
+}
+
+.searchbar_line {
+    background: #1D2540;
+    padding: 10px;
+    text-align: center;
+}
+
+.searchbar {
+    width: 300px;
+    border-radius: 10px;
+    border: 0px; 
+    height: 35px;
+    margin: 0px auto;
+    font-size: 25px;
+    padding: 0px;
+}
+
+
+.welcome {
+    display: none;
+    background: url(../images/Banner.jpeg);
+    background-size: cover;
+    min-height: 25vh;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+
+
+footer {
+    background: #1D2540;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+}
