@@ -1,9 +1,10 @@
 @import "imports/links.css";
 
 main {
-    max-width: 1800px;
+    max-width: 1600px;
     margin: auto;
     background: #f2f2f2;
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -98,4 +99,40 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 13px;
+}
+
+.game {
+    display: flex;
+    padding: 20px;
+}
+.game h2 {
+    text-align: left;
+    margin-top: -5px;
+}
+
+.game > * {
+    flex: 1;
+}
+
+.price {
+   font-size: 20px;
+   font-weight: 600;
+}
+.all_systems img, 
+.all_best_sellers img {
+    max-width: 120px;
+}
+
+
+.systems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+
+.best_sellers {
+    display: flex;
+    flex-direction: column;
 }

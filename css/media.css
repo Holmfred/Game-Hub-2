@@ -20,8 +20,9 @@
     }
 
     .game_button {
-        margin-top: 70px;
+        margin-top: 80px;
     }
+
 }
 
 
@@ -63,6 +64,10 @@
     p {
         font-size: 20px;
     }
+
+    .cta-large {
+        font-size: 28px;
+    }
 }
 
 @media (min-width:1000px) {
@@ -93,6 +98,14 @@
         margin-top: 90px;
     }
 
+    .cta-large {
+        font-size: 30px;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
     
 
 }
@@ -113,5 +126,13 @@
 
     p {
         font-size: 30px;
+    }
+
+    .cta-large {
+        font-size: 35px;
+    }
+
+    .price {
+        font-size: 32px;
     }
 }
