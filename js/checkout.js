@@ -7,6 +7,8 @@ const cardNumber = document.querySelector("#cardNumber")
 const cardNumberError = document.querySelector("#cardNumberError")
 const expirationDate = document.querySelector("#expirationDate")
 const expirationDateError = document.querySelector("#expirationDateError")
+const cvv = document.querySelector("#cvv")
+const cvvError = document.querySelector("#cvvError")
 const address = document.querySelector("#address")
 const addressError = document.querySelector("#addressError")
 const city = document.querySelector("#city")
@@ -34,12 +36,19 @@ function validateForm(){
     else{
         cardNumberError.style.display = "block";
     }
-    if(expirationDate.value.trim().length === 5){
+    if(expirationDate.value.trim().length === 5 || 7){
         expirationDateError.style.display = "none";
     }
     else{
         expirationDateError.style.display = "block";
     }
+    if(cvv.value.trim().length === 3 || 4){
+        cvvError.style.display = "none";
+    }
+    else{
+        cvvError.style.display = "block";
+    }
+
     if(address.value.trim().length > 0){
         addressError.style.display = "none";
     }
@@ -52,7 +61,7 @@ function validateForm(){
     else{
         cityError.style.display = "block";
     }
-    if(fullName.value.trim().length > 0 && validateEmail(email.value) === true && validateCardNumber(cardNumber.value.replace(/\s/g, "")) === true && expirationDate.value.trim().length === 5 && address.value.trim().length > 0 && city.value.trim().length > 0){
+    if(fullName.value.trim().length > 0 && validateEmail(email.value) === true && validateCardNumber(cardNumber.value.replace(/\s/g, "")) === true && expirationDate.value.trim().length === 5 && cvv.value.trim().length === 3 || 4 && address.value.trim().length > 0 && city.value.trim().length > 0){
         success.style.display = "block"
         console.log(success)
     }
