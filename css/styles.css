@@ -9,6 +9,7 @@ main {
 body {
     background: #f2f2f2;
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -123,6 +124,20 @@ footer {
    font-size: 20px;
    font-weight: 600;
 }
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.new-price{
+    color: red;
+}
+
+.sale-price{
+    display: flex;
+    gap: 10px;
+}
+
 .all_systems img, 
 .all_best_sellers img {
     max-width: 120px;
@@ -141,3 +156,21 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    border: 2px solid green;
+    background: #fff;
+    max-width: 200px;
+    min-width: 100px;
+    padding: 20px;
+    margin: auto;
+    position: fixed;
+    right: 50px;
+    top: 300px;
+}
+

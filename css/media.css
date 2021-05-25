@@ -7,6 +7,10 @@
     .game_button {
         margin-top: 50px;
     }
+
+    .container {
+        max-width: 450px;
+    }
 }
 
 @media (min-width:650px) {
@@ -23,6 +27,25 @@
         margin-top: 80px;
     }
 
+    .container {
+        max-width: 550px;
+    }
+    .buttons{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        gap: 50px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .create {
+        font-size: 20px;
+        width: 300px;
+    }
 }
 
 
@@ -68,10 +91,16 @@
     .cta-large {
         font-size: 28px;
     }
+
+    .container {
+        max-width: 700px;
+    }
+
+
 }
 
 @media (min-width:1000px) {
-    .best_sellers {
+    .products {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -106,6 +135,32 @@
         font-size: 25px;
     }
 
+    .container {
+        max-width: 900px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    .buttons {
+        gap: 200px;
+    }
+    
+    button {
+        max-width: 400px;
+        max-height: 70px;
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .create {
+        max-width: 400px;
+        max-height: 40px;
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
     
 
 }
@@ -134,5 +189,14 @@
 
     .price {
         font-size: 32px;
+    }
+
+    .container {
+        max-width: 1250px;
+    }
+
+    .cta-menu {
+        min-width: 400px;
+        font-size: 30px;
     }
 }
