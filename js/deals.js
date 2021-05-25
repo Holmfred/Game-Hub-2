@@ -1,6 +1,7 @@
 import { productArray } from "./constants/saleList.js";
 const productContainer = document.querySelector(".products");
 
+
 productArray.forEach(function(product){
     productContainer.innerHTML += 
     `
@@ -16,7 +17,7 @@ productArray.forEach(function(product){
                 <div class="price old-price">${product.oldPrice}$</div>
                 <div class="price new-price">${product.newPrice}$</div>
             </div>
-            <button class="cta cta-large">Add to Cart</button>
+            <a href="cart.html"><button class="cta cta-large">Add to Cart</button></a>
             </div>
         </div>
     </div>

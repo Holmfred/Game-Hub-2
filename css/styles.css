@@ -74,7 +74,9 @@ nav li {
 .searchbar_line {
     background: #1D2540;
     padding: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .searchbar {
@@ -162,15 +164,17 @@ footer {
     flex-direction: column;
 }
 
-.cart {
-    border: 2px solid green;
-    background: #fff;
-    max-width: 200px;
-    min-width: 100px;
-    padding: 20px;
-    margin: auto;
-    position: fixed;
-    right: 50px;
-    top: 300px;
+
+.shopping-cart{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
+.checkout {
+    text-align: center;
+}
+
+.success {
+    display: none;
+}

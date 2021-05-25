@@ -36,15 +36,19 @@
             </div>
         </section>
         <section class="searchbar_line">
-            <input type="text" placeholder="Search..." class="searchbar">
+            <div>
+                <input type="text" placeholder="Search..." class="searchbar">
+            </div>
+            <div class="cart">
+                <a href="cart.html"><img src="images/Cart.png" alt="cart" class="shopping-cart"></a>
+            </div>
         </section>
         <section class="welcome">
         </section >
     </header>
     <main>
-    <h1>Contact Us</h1>
+    <h1>Checkout</h1>
     <main class="container">
-        <h1 class="success">Excelsior!</h1>
             <form id="contactForm">
                 <div class="subject">
                     <label>
@@ -60,19 +64,40 @@
                     </label>
                     <div class="form-error" id="emailError">Please enter a valid email address</div>
                 </div>
-                <div class="subject2">
+                <div class="subject">
                     <label>
-                        <p>Subject (Minimum 40 characters)</p>
-                        <input name="subject" id="subject" />
+                        <p>Card Number (Required)</p>
+                        <input name="cardNumber" id="cardNumber" />
                     </label>
-                    <div class="form-error" id="subjectError">The Subject must be at least 40 characters</div>
+                    <div class="form-error" id="cardNumberError">Please enter a valid card number</div>
+                </div>
+                <div class="subject">
+                    <label>
+                        <p>Expiration Date (Month/Year)</p>
+                        <input name="expirationDate" id="expirationDate" />
+                    </label>
+                    <div class="form-error" id="expirationDateError">Please enter a valid Date</div>
+                </div>
+                <div class="subject">
+                    <label>
+                        <p>Address (Required)</p>
+                        <input name="address" id="address" />
+                    </label>
+                    <div class="form-error" id="addressError">Please enter a valid address</div>
+                </div>
+                <div class="subject">
+                    <label>
+                        <p>City (Required)</p>
+                        <input name="city" id="city" />
+                    </label>
+                    <div class="form-error" id="cityError">Please enter a valid city</div>
                 </div>
             <button>Submit</button>
+            <h1 class="success">You will soon get a confirmation on your email</h1>
+            <script src="js/components/displayError.js"></script>
+            <script src="js/checkout.js"></script>
         </form>
     </main>
-    </div>
-    <script src="js/components/displayError.js"></script>
-    <script src="js/contact.js"></script>
 </body>
 </html>
     </main>
