@@ -19,7 +19,8 @@ getGames()
 function createHTML(products){
     products.forEach(function(product){
         productContainer.innerHTML += 
-        `<a href="details.html?id=${product.id}" class="game">
+        `
+        <a href="details.html?id=${product.id}" class="game">
         <div>
         <img src="${product.images[0].src}" alt="${product.name}">
         </div>
@@ -29,8 +30,8 @@ function createHTML(products){
         </div>        
         </a>
         <div class="game_button">
-                <div class="price">${product.prices.price}$</div>
-                <a href="cart.html?id=${product.id}"><button class="cta cta-large">Add to Cart</button></a>
+            <div class="price">${product.prices.price}$</div>
+            <a href="cart.html?id=${product.id}"><button class="cta cta-large">Add to Cart</button></a>
         </div>`
     })
         
