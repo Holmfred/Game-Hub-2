@@ -141,7 +141,9 @@ footer {
 }
 
 .all_systems img, 
-.featured-games img {
+.featured-games img,
+.game-details img,
+.game-in-cart img {
     max-width: 120px;
 }
 
@@ -159,11 +161,13 @@ footer {
     flex-direction: column;
 }
 
-.featured-games {
+.featured-games,
+.game-details,
+.game-in-cart {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
-
 
 .shopping-cart{
     width: 40px;
