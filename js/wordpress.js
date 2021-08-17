@@ -1,4 +1,4 @@
-const url = "http://www.sorlienolsen.eu/wp-json/wc/store/products";
+const url = "https://www.sorlienolsen.eu/wp-json/wc/store/products";
 const productContainer = document.querySelector(".featured-games");
 
 async function getGames(){
