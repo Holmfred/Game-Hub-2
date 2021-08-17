@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "http://localhost/game-hub/wp-json/wc/store/products/" + id;
+const url = "https://www.sorlienolsen.eu/wp-json/wc/store/products/" + id;
 
 console.log(url);
 

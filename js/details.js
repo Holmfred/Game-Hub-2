@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "http://localhost/game-hub/wp-json/wc/store/products/" + id;
+const url = "https://www.sorlienolsen.eu/wp-json/wc/store/products/" + id;
 
 console.log(url);
 
@@ -40,7 +40,7 @@ function createHTML(details) {
     <p>${details.description}</p>
         <div class="game_button">
             <div class="price">${details.prices.price}$</div>
-            <a href="cart.html"><button class="cta cta-large">Add to Cart</button></a>
+            <a href="cart.html?id=${details.id}"><button class="cta cta-large">Add to Cart</button></a>
         </div>
     </div>` 
 }
