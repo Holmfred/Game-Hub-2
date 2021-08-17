@@ -1,4 +1,4 @@
-const url = "http://localhost/game-hub/wp-json/wc/store/products";
+const url = "http://www.sorlienolsen.eu/wp-json/wc/store/products";
 const productContainer = document.querySelector(".featured-games");
 
 async function getGames(){
@@ -24,15 +24,17 @@ function createHTML(products){
         <div>
         <img src="${product.images[0].src}" alt="${product.name}">
         </div>
-        <div>
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        </div>        
-        </a>
-        <div class="game_button">
-            <div class="price">${product.prices.price}$</div>
-            <a href="cart.html?id=${product.id}"><button class="cta cta-large">Add to Cart</button></a>
-        </div>`
+        <div class="fix"> 
+            <div>
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            </div>        
+            <div class="game_button">
+                <div class="price">${product.prices.price}$</div>
+                <a href="cart.html?id=${product.id}"><button class="cta cta-large">Add to Cart</button></a>
+            </div>
+        </div>
+        </a>`
     })
         
    

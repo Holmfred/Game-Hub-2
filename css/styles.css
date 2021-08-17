@@ -122,6 +122,13 @@ footer {
     flex: 1;
 }
 
+.fix {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
 .price {
    font-size: 20px;
    font-weight: 600;
