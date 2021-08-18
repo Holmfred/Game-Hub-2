@@ -30,7 +30,7 @@ function createHTML(products){
             <p>${product.description}</p>
             </div>        
             <div class="game_button">
-                <div class="price">${product[i].prices.price.slice(0, 2)}.${product[i].prices.price.slice(2, 4)}$</div>
+                <div class="price">${product.prices.price.slice(0, 2)}.${product.prices.price.slice(2, 4)}</div>
                 <a href="cart.html?id=${product.id}"><button class="cta cta-large">Add to Cart</button></a>
             </div>
         </div>
