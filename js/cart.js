@@ -39,7 +39,7 @@ function createHTML(details) {
     <h2>${details.name}</h2>
     <p>${details.description}</p>
         <div class="game_button">
-            <div class="price">${details[i].prices.price.slice(0, 2)}.${details[i].prices.price.slice(2, 4)}</div>
+            <div class="price">${details[i].prices.price.slice(0, 2)}.${details[i].prices.price.slice(2, 4)}$</div>
         </div>
     </div>` 
 }
